@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>首页</ion-title>
+  </ion-navbar>
+</ion-header>
+  <div class="bar bar-header bar-light">
+  <h1 class="title">bar-light</h1>
+</div>
+<ion-content padding>
+   <ion-list *ngFor="let item of listData">
+      <ion-item>
+        <ion-avatar item-left>
+          <img [src]="item?.url">
+        </ion-avatar>
+        {{item?.title}}
+      </ion-item>
+    </ion-list>
+</ion-content>
